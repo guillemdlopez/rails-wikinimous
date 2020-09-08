@@ -1,6 +1,6 @@
 <div class="navbar d-flex justify-content-between align-items-center">
   <h1 class="title"><%= link_to "Articles", articles_path %></h1>
-  <p id="btn-new-article"><%= link_to "New Article", new_article_path %></p>
+  <%= link_to '<button class="btn-new-article" type="button">New Article</button>'.html_safe, new_article_path %>
 </div>
 
 <div class="edit">

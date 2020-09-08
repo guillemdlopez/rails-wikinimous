@@ -1,26 +1,40 @@
 // app/assets/stylesheets/application.scss
 @import "bootstrap/scss/bootstrap";
 
-.container {
-  text-align: center;
-  margin: 0 auto;
-  width: 700px;
-}
-
 .navbar {
   background: rgba(0,0,0,0.1);
   margin-bottom: 40px;
 }
 
-#btn-new-article {
-  background: white;
+button {
+  background: #2ec1ac;
+  border: 0px;
   padding: 10px 20px;
+  margin-left: 14px;
   border-radius: 4px;
-  margin-bottom: 0;
+  color: white;
 }
 
-.title {
-  color: black;
+button:hover {
+  background: #27a390
+}
+
+.btn-new-article {
+  background: #2ec1ac;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+}
+
+.btn-new-article:hover {
+  text-decoration: none;
+  background: #27a390;
+  color: white;
+}
+
+.title:hover {
+  text-decoration: none;
 }
 
 .wrapper-article {
@@ -37,5 +51,17 @@
 }
 
 .article {
-  border-radius: 10px;
+  padding-top: 0px;
+  width: 200px;
+  border-radius: 4px;
+}
+
+.article {
+} img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.title-article {
+  font-size: 20px;
 }
