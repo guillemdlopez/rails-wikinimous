@@ -1,0 +1,13 @@
+<div class="navbar d-flex justify-content-between align-items-center">
+  <h1 class="title"><%= link_to "Articles", articles_path %></h1>
+  <p id="btn-new-article"><%= link_to "New Article", new_article_path %></p>
+</div>
+
+<div class="edit">
+  <div class="border-bottom pb-2 title-icons d-flex align-items-center">
+    <h1 class="mr-2">New article</h1>
+    <%= link_to "Back", articles_path %>
+  </div>
+
+  <%= render "form", article: @article %>
+</div>
